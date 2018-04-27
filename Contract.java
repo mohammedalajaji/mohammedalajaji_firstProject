@@ -1,7 +1,7 @@
 
 public class Contract {
 private int id;
-private String date;
+private String history;
 private String companyName;
 private Clause[]arrclauses;
 private int nbc;
@@ -13,7 +13,7 @@ public Contract(int id , String date,String companyName){
 	arrclauses=new Clause[20];
 	nbc=0;
 }
-public double computeContractRevenue(){
+public double calculateContractRevenue(){
 	double rev=0.0;
 	for(int i=0;i<=nbc;nbc++){
 		rev+=arrclauses[i].getrevaneu();
